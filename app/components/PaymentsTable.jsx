@@ -1,20 +1,9 @@
 import {Grid, keyframes, Paper} from "@mui/material";
 import styled from "@emotion/styled";
-import {useContext, useEffect, useState} from "react";
+import {useContext} from "react";
 import {PaymentsContext} from "@/app/context/PaymentsContext";
 import useAnimationVisibility from "@/app/hooks/useAnimationVisibility";
 
-
-const fadeInAnimation = keyframes`
-  from {
-    opacity: 0;
-    visibility: hidden
-  }
-  /* Start invisible */
-  to {
-    opacity: 1;
-    visibility: visible
-  }`;
 
 const fadeOutAnimation = keyframes`
   from {
@@ -73,17 +62,6 @@ const PaymentsTable = () => {
     const formatter = new Intl.NumberFormat('en-US');
 
     const isAnimationVisible = useAnimationVisibility(isLoading);
-    /*   const [isAnimationVisible, setIsAnimationVisible] = useState(false); // Track animation visibility
-
-       useEffect(() => {
-           if (isLoading) {
-               setIsAnimationVisible(true); // Show animation when loading starts
-               const timeoutId = setTimeout(() => setIsAnimationVisible(false), 5000); // Hide animation after 2 seconds
-               return () => clearTimeout(timeoutId); // Cleanup on unmount
-           } else {
-               setIsAnimationVisible(false); // Hide animation when loading ends
-           }
-       }, [isLoading]);*/
     return (
         <Grid container sx={{maxWidth: "324px", margin: "auto", position: "relative"}}>
             <Grid container item>

@@ -2,7 +2,7 @@ import { Box, Grid } from "@mui/material";
 import Faq from "@/app/components/Faq";
 import React, { Suspense, lazy } from "react";
 
-const Calculator = lazy(() => import("@/app/components/Calculator"));
+const Calculator = lazy(() => import("@/app/components/PaymentsSection"));
 
 const LoanCalculator = () => {
     return (

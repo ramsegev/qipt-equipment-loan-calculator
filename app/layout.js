@@ -7,7 +7,7 @@ import React from "react";
 const inter = Inter({subsets: ["latin"]});
 
 export const metadata = {
-    title: "Loan Calculator",
+    title: "Loan PaymentsSection",
     description: "Monthly payment calculator",
 };
 

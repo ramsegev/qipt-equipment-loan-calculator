@@ -1,12 +1,6 @@
 import {createTheme} from "@mui/material/styles";
-import {Roboto} from 'next/font/google';
 import localFont from 'next/font/local'
 
-const roboto = Roboto({
-    weight: ['300', '400', '500', '700'],
-    subsets: ['latin'],
-    display: 'swap',
-});
 const ProximaNova = localFont({
     src: [
         {
@@ -94,22 +88,6 @@ const theme = createTheme({
             fontFamily: ProximaNova.style.fontFamily,
         },
         components: {
-            /*MuiToolbar: {
-                styleOverrides: {
-                    root: {
-                        backgroundColor: "#B78AF2"
-                    }
-                }
-            },*/
-            /*MuiGrid: {
-                styleOverrides: {
-                    container: {
-                        width: "100vw",
-                        minHeight: "100vh",
-                        backgroundColor: "#FAFAFA"
-                    }
-                }
-            },*/
             MuiFab: {
                 styleOverrides: {
                     root: {

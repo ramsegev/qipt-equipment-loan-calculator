@@ -47,7 +47,7 @@ const faqData = [
 const Faq = () => {
     return (
         <Paper square elevation={0} sx={{
-            bgcolor: "transparent",
+            backgroundColor: "transparent",
             px: {md: 5},
             pt: {xs: 2, md: 9},
             pb: 0,
@@ -57,7 +57,7 @@ const Faq = () => {
             </Typography>
             {faqData.map((item) => (
                 <Accordion key={item.question} elevation={0} sx={{
-                    bgcolor: "transparent",
+                    backgroundColor: "transparent",
                     '&.MuiPaper-root .Mui-expanded': {
                         minHeight: "10px",
                         m: 0,
@@ -72,7 +72,7 @@ const Faq = () => {
                                 transform: 'rotate(90deg)',
                             },
                             fontWeight: 600,
-                            bgcolor: "transparent"
+                            backgroundColor: "transparent"
                         }}
                         expandIcon={<ExpandMoreIcon sx={{
                             transform: 'rotate(270deg)',

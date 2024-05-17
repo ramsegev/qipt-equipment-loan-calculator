@@ -8,7 +8,7 @@ const PaymentsContext = createContext({
 });
 
 const PaymentsProvider = ({ children }) => {
-    const [payments, setPayments] = useState({}); // Initialize payments as empty object
+    const [payments, setPayments] = useState({});
     const [isLoading, setIsLoading] = useState(false);
 
     const value = {
